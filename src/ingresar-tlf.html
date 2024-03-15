@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/index.css" />
+        <link
+            rel="stylesheet"
+            href="./assets/desktop.css"
+            media="screen and (min-width: 768px)"
+        />
+        <title>Ingresar télefono</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Modal para usuarios de escritorio -->
+            <div class="desktop-modal">
+                <p>Lo sentimos, VClub está disponible solo en versión móvil.</p>
+            </div>
+
+            <!-- Contenido principal -->
+            <div class="content">
+                <img src="./assets/imgs/logo.svg" alt="Logo de VClub-premium" />
+                <p>Ingresa tu numero celular para verificar tu cuenta Vclub</p>
+                <div class="container-number">
+                    <div class="flag-section">
+                        <!-- Aquí puedes agregar la imagen de la bandera y el código de país -->
+                        <img
+                            src="./assets/imgs/flag.svg"
+                            alt="bandera-venezuela"
+                        />
+                        <span>+58</span>
+                        <!-- Por ejemplo: <img src="bandera.png" alt="Bandera"> + <span>+1</span> -->
+                    </div>
+                    <div class="phone-section">
+                        <label for="phone-input">Número de tlf:</label>
+                        <input
+                            type="number"
+                            id="phone-input"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                            placeholder="000-0000-000"
+                            required
+                        />
+                    </div>
+                </div>
+                <button id="submit-button">Verificar</button>
+            </div>
+
+            <!-- Modal oculto inicialmente -->
+            <div id="modal" class="modal"></div>
+
+            <!-- Segundo modal (inicialmente oculto) -->
+            <div id="error-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Por favor, ingresa un número válido de 10 dígitos.</p>
+                </div>
+            </div>
+        </div>
+        <script src="./scripts/ingresar-tlf.js"></script>
+    </body>
+</html>

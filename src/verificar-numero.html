@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/index.css" />
+        <link
+            rel="stylesheet"
+            href="./assets/desktop.css"
+            media="screen and (min-width: 768px)"
+        />
+        <title>Confirmar código</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Modal para usuarios de escritorio -->
+            <div class="desktop-modal">
+                <p>Lo sentimos, VClub está disponible solo en versión móvil.</p>
+            </div>
+
+            <!-- Contenido principal -->
+            <div class="content">
+                <img src="./assets/imgs/logo.svg" alt="Logo de VClub-premium" />
+                <p>Ingresa tu numero celular para verificar tu cuenta Vclub</p>
+                <div class="container-code">
+                    <div class="code-section">
+                        <label for="code-input">Número de tlf:</label>
+                        <input
+                            type="number"
+                            id="code-input"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                            placeholder="000 - 0000 - 000"
+                            required
+                        />
+                    </div>
+                </div>
+                <button id="submit-button-code">Comprobar código</button>
+                <button id="back-button">Volver a enviar código</button>
+            </div>
+
+            <!-- Modal oculto inicialmente -->
+            <div id="modal" class="modal"></div>
+
+            <!-- Segundo modal (inicialmente oculto) -->
+            <div id="error-modal-code" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Por favor, ingresa un número válido de 10 dígitos.</p>
+                </div>
+            </div>
+        </div>
+        <script src="./scripts/verificar-numero.js"></script>
+    </body>
+</html>
