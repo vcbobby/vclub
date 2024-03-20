@@ -1,0 +1,211 @@
+@import '~js-datepicker/dist/datepicker.min.css';
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+    color: #828282;
+}
+.desktop-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    color: #fff;
+    text-align: center;
+    display: none; /* Inicialmente oculto */
+}
+.container-home {
+    background-color: #f9fafb;
+}
+
+/* Estilos para el navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    padding-top: 50px;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0px 8px 12px rgba(189, 189, 189, 0.48);
+    -webkit-box-shadow: 0px 8px 12px rgba(189, 189, 189, 0.48);
+    -moz-box-shadow: 0px 8px 12px rgba(189, 189, 189, 0.48);
+}
+
+/* Estilos para el icono de menú */
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+.logo {
+    margin: 0 auto;
+}
+/* Estilos para el logo */
+.logo img {
+    max-width: 100px; /* Ajusta el tamaño según tu logo */
+    margin-left: -30px;
+}
+
+.target {
+    margin: 8px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 85.43px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0px 8px 12px rgba(189, 189, 189, 0.48);
+    -webkit-box-shadow: 0px 8px 12px rgba(189, 189, 189, 0.48);
+    -moz-box-shadow: 0px 8px 12px rgba(189, 189, 189, 0.48);
+}
+
+.target img {
+    width: 20%;
+}
+.targets-section {
+    display: none;
+}
+.date {
+    width: 50%;
+    padding-left: 15px;
+}
+
+.date h2 {
+    font-family: 'Roboto';
+    height: 23px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #353535;
+}
+.date p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.credits-number {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.credits-text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.account-section {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.information h2 {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    color: #353535;
+}
+
+.phone {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+.subscription {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    color: #353535;
+    margin-bottom: 36px;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buttons button {
+    background-color: #fff;
+    color: #d1d1d1;
+    width: 49%;
+    height: 43.38px;
+    border-radius: 13px;
+    border: 1px solid #d1d1d1;
+}
+
+.buttons button:focus {
+    background-color: #1d85ff;
+    color: #fff;
+}
+.redeem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+.redeem-text {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    padding-left: 8px;
+}
+
+.redeem img {
+    width: 42px;
+    height: 42px;
+    padding: 8.399999618530273px 0 7.350000381469727px 0;
+}
+
+.circle {
+    width: 12.66px;
+    height: 12.66px;
+    background: linear-gradient(180deg, #1d85ff 0%, #1dffd6 100%);
+    border-radius: 50%;
+}
+
+.filter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.input-container {
+    width: 48%;
+    border: 1px solid #d1d1d1;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+}
+
+.input-container label img {
+    width: 24px;
+    height: 24px;
+}
+.input-container input {
+    width: 80%;
+    border: none;
+    margin-left: 5px;
+}
