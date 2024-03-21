@@ -1,0 +1,57 @@
+.modal-intro1,
+.modal-intro2 {
+    display: none; /* El modal está oculto por defecto */
+    position: fixed; /* Posición fija para que se muestre en todo el sitio */
+    z-index: 1; /* Sitúa el modal por encima de todo lo demás en la página */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    overflow: auto; /* Habilita el scroll si es necesario */
+    background-color: #fff;
+}
+
+.modal-intro-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.izq {
+    margin-top: -28px;
+    margin-left: -47px;
+}
+.der {
+    margin-top: -65px;
+    margin-left: -47px;
+}
+
+#img-izq {
+    animation: img-izq 3s;
+}
+
+#img-der {
+    animation: img-der 3s;
+}
+
+@keyframes img-izq {
+    0% {
+        left: -100px;
+        top: 500px;
+    }
+    100% {
+        left: 50%;
+        top: 50%;
+    }
+}
+
+@keyframes img-der {
+    0% {
+        left: 500px;
+        top: 500px;
+    }
+    100% {
+        right: 50%;
+        top: 50%;
+    }
+}

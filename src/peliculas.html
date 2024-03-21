@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./assets/novedades.css" />
+        <link rel="stylesheet" href="./assets/menu.css" />
         <link
             rel="stylesheet"
             href="./assets/desktop.css"
@@ -23,10 +24,115 @@
                 <nav class="navbar">
                     <div class="menu-icon">
                         <!-- Aquí puedes agregar el icono de menú (por ejemplo, una hamburguesa) -->
-                        <img
-                            src="./assets/imgs/menu-button.svg"
-                            alt="icono de menu"
-                        />
+                        <a id="menu" href="#">
+                            <img
+                                src="./assets/imgs/menu-button.svg"
+                                alt="icono de menu"
+                            />
+                        </a>
+                        <div class="menu-dropdown">
+                            <div class="menu-dropdown-item">
+                                <a href="/">
+                                    <img
+                                        src="./assets/imgs/home.svg"
+                                        alt="home icone"
+                                    />
+                                    <p>Home</p>
+                                </a>
+                            </div>
+
+                            <div class="menu-dropdown-item">
+                                <a href="./cuenta.html">
+                                    <img
+                                        src="./assets/imgs/account.svg"
+                                        alt="account icon"
+                                    />
+                                    <p>Mi cuenta</p>
+                                </a>
+                            </div>
+                            <div class="menu-dropdown-item" id="news">
+                                <a class="anchor-news">
+                                    <img
+                                        class="icon-news"
+                                        src="./assets/imgs/news.svg"
+                                        alt="news icon"
+                                    />
+                                    <div class="news-option">
+                                        <p class="news-text">Novedades</p>
+                                        <img
+                                            class="news-img"
+                                            src="./assets/imgs/mas.svg"
+                                            alt="plus icon"
+                                        />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item-options">
+                                <div class="item-options-item">
+                                    <a href="./peliculas.html">
+                                        <img
+                                            src="./assets/imgs/film.svg"
+                                            alt="film icon"
+                                        />
+                                        <p>Películas</p>
+                                    </a>
+                                </div>
+                                <div class="item-options-item">
+                                    <a href="./series.html">
+                                        <img
+                                            src="./assets/imgs/series.svg"
+                                            alt="series icon"
+                                        />
+                                        <p>Series</p>
+                                    </a>
+                                </div>
+                                <div class="item-options-item">
+                                    <a href="./programas.html">
+                                        <img
+                                            src="./assets/imgs/programas.svg"
+                                            alt="programs icon"
+                                        />
+                                        <p>Programas</p>
+                                    </a>
+                                </div>
+                                <div class="item-options-item">
+                                    <a href="./videojuegos.html">
+                                        <img
+                                            src="./assets/imgs/videojuegos.svg"
+                                            alt="games icon"
+                                        />
+                                        <p>Videojuegos</p>
+                                    </a>
+                                </div>
+                                <div class="item-options-item">
+                                    <a href="./musica.html">
+                                        <img
+                                            src="./assets/imgs/musica.svg"
+                                            alt="music icon"
+                                        />
+                                        <p>Música</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="menu-dropdown-item">
+                                <a href="./terminos.html">
+                                    <img
+                                        src="./assets/imgs/terms.svg"
+                                        alt="terms icone"
+                                    />
+                                    <p>Términos y condiciones</p>
+                                </a>
+                            </div>
+                            <div class="menu-dropdown-item">
+                                <a href="/">
+                                    <img
+                                        src="./assets/imgs/terms.svg"
+                                        alt="terms icone"
+                                    />
+                                    <p>Cerrar Sesión</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="logo">
                         <!-- Aquí puedes agregar tu logo -->
@@ -402,5 +508,6 @@
             </div>
         </div>
         <script src="./scripts/novedades.js"></script>
+        <script src="./scripts/menu.js"></script>
     </body>
 </html>
