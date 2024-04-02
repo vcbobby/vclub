@@ -3,6 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./assets/home.css" />
         <link rel="stylesheet" href="./assets/menu.css" />
         <link
@@ -155,7 +161,7 @@
                             alt="prime video logo"
                         />
                         <div class="line-container-1 line-container"></div>
-                        <button>Redimir</button>
+                        <button id="redim">Redimir</button>
                     </div>
                     <div class="target">
                         <img
@@ -189,6 +195,43 @@
                         <div class="line-container-5 line-container"></div>
                         <button disabled>Redimir</button>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="redimir-modal-home">
+            <div class="redimir-modal-content-home">
+                <p class="pin">Vas a redimir</p>
+                <p class="credits-number">1150</p>
+                <p class="credits-number-text">Créditos</p>
+                <p class="days">Por 30 Días de</p>
+                <img
+                    class="img-modal"
+                    src="./assets/imgs/prime.png"
+                    alt="prime logo"
+                />
+
+                <button class="go">Verificar</button>
+                <button class="back-button">Volver</button>
+                <div class="lds-ring" bis_skin_checked="1">
+                    <div bis_skin_checked="1"></div>
+                    <div bis_skin_checked="1"></div>
+                    <div bis_skin_checked="1"></div>
+                    <div bis_skin_checked="1"></div>
+                </div>
+                <div class="redim-success">
+                    <p class="pin">Tu PIN es</p>
+
+                    <p class="code-pin">SLKF-SIUO-FCMI</p>
+
+                    <p class="copy-success">
+                        <span class="img-modal"
+                            ><img
+                                src="./assets/imgs/copy.svg"
+                                alt="copy" /></span
+                        >Copiar PIN
+                    </p>
+                    <button class="go">Ir a Prime Video</button>
+                    <button class="back-button">Ir al Dashboard</button>
                 </div>
             </div>
         </div>

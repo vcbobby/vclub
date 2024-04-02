@@ -333,7 +333,38 @@
     justify-content: end;
     padding: 10px;
 }
+.plataforma {
+    flex-direction: column;
+}
+.input-label {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 15px 0;
+}
 
+.option img {
+    width: 50px;
+}
+.option span {
+    margin-left: 10px;
+}
+
+.custom-select {
+    display: none;
+    position: absolute;
+    top: 57%;
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid gray;
+    padding: 10px 15px;
+    border-radius: 12px;
+}
 .input-container label img {
     width: 24px;
     height: 24px;

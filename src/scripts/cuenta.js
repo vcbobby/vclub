@@ -1,5 +1,6 @@
 // script.js
-
+const input = document.getElementById('platform')
+const options = document.querySelector('.custom-select')
 import '../assets/cuenta.css'
 const datepicker = require('js-datepicker')
 document.addEventListener('DOMContentLoaded', function () {
@@ -49,4 +50,16 @@ const picker = datepicker('#date', {
         'Diciembre',
     ],
     customDays: ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'],
+})
+
+// Muestra u oculta las opciones al hacer clic en el input
+input.addEventListener('click', function () {
+    options.style.display = options.style.display === 'block' ? 'none' : 'block'
+})
+
+// Oculta las opciones al hacer clic en cualquier parte de la pantalla
+document.addEventListener('click', function (event) {
+    if (!input.contains(event.target)) {
+        options.style.display = 'none'
+    }
 })

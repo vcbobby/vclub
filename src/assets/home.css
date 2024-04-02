@@ -133,3 +133,201 @@
     border: 2px solid #bdd2ea;
     color: #bdd2ea;
 }
+
+/* //redim modal */
+
+.redimir-modal-home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    color: #fff;
+    text-align: center;
+    display: none; /* Inicialmente oculto */
+}
+
+.redimir-modal-content-home,
+.redimir-modal-home {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(29, 133, 255, 1);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.09px;
+    text-align: center;
+}
+
+.pin {
+    color: rgba(41, 47, 61, 1);
+    font-family: Roboto;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 22.27px;
+    text-align: center;
+    margin-top: 20px;
+}
+.days {
+    color: rgba(41, 47, 61, 1);
+    font-family: Roboto;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 22.27px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.redimir-modal-content-home {
+    background-color: #fff;
+    width: 350px;
+    height: 300px;
+    border-radius: 32px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.redimir-modal-content-home label {
+    display: none;
+}
+.redimir-modal-content-home input {
+    font-family: Roboto;
+    width: 90%;
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 43.36px;
+    text-align: center;
+    color: rgba(41, 47, 61, 1);
+    border: none;
+    margin-bottom: 25px;
+}
+
+.redimir-modal-content-home button {
+    margin-bottom: 10px;
+    width: 85%;
+    color: rgba(29, 133, 255, 1);
+    padding: 10px;
+    border: 1px solid rgba(29, 133, 255, 1);
+    border-radius: 12px;
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 19.92px;
+    text-align: center;
+}
+.redimir-modal-content-home button:hover {
+    cursor: pointer;
+}
+
+.go {
+    background: linear-gradient(65.28deg, #1d85ff -29.68%, #1dffd6 168.47%);
+    color: #fff !important;
+}
+.container-home {
+    background-color: #f9fafb;
+}
+
+.redimir-modal-content-home img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.credits-number {
+    font-family: Roboto;
+    font-size: 41px;
+    font-weight: 400;
+    line-height: 48.05px;
+    text-align: center;
+    color: rgba(41, 47, 61, 1);
+}
+.redim-success {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.credits-number-text {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.09px;
+    text-align: center;
+    color: rgba(29, 133, 255, 1);
+}
+
+.img-modal img {
+    width: 17px;
+    margin-bottom: 0;
+}
+.copy-success {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(29, 133, 255, 1);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.09px;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+.code-pin {
+    font-family: Roboto;
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 43.36px;
+    text-align: center;
+    color: rgba(41, 47, 61, 1);
+    margin-bottom: 10px;
+}
+
+.lds-ring,
+.lds-ring div {
+    box-sizing: border-box;
+}
+.lds-ring {
+    display: none;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid rgba(29, 133, 255, 1);
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: rgba(29, 133, 255, 1) transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

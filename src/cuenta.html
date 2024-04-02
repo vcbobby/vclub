@@ -3,8 +3,15 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./assets/cuenta.css" />
         <link rel="stylesheet" href="./assets/menu.css" />
+
         <link
             rel="stylesheet"
             href="./assets/desktop.css"
@@ -161,18 +168,60 @@
                             </label>
                             <input type="text" id="date" placeholder="Fecha" />
                         </div>
-                        <div class="input-container">
-                            <label for="platform">
-                                <img
-                                    src="./assets/imgs/platform.svg"
-                                    alt="Platform"
+                        <div class="input-container plataforma">
+                            <div class="input-label">
+                                <label for="platform">
+                                    <img
+                                        src="./assets/imgs/platform.svg"
+                                        alt="Platform"
+                                    />
+                                </label>
+                                <input
+                                    type="text"
+                                    id="platform"
+                                    placeholder="Plataforma"
                                 />
-                            </label>
-                            <input
-                                type="text"
-                                id="platform"
-                                placeholder="Plataforma"
-                            />
+                            </div>
+                            <div class="custom-select">
+                                <div class="options"></div>
+                                    <div class="option">
+                                        <img
+                                            src="./assets/imgs/netflix.png"
+                                            alt="Netflix"
+                                        />
+                                        <span>Netflix</span>
+                                    </div>
+                                    <div class="option">
+                                        <img
+                                            src="./assets/imgs/disney.png"
+                                            alt="Disney"
+                                        />
+                                        <span>Disney Plus</span>
+                                    </div>
+                                    <div class="option">
+                                        <img
+                                            src="./assets/imgs/prime.png"
+                                            alt="Prime logo"
+                                        />
+                                        <span>Prime Video</span>
+                                    </div>
+                                    <div class="option">
+                                        <img
+                                            src="./assets/imgs/paramount.png"
+                                            alt="Paramount Logo"
+                                        />
+                                        <span>Paramount Plus</span>
+                                    </div>
+                                    <div class="option">
+                                        <img
+                                            src="./assets/imgs/star.png"
+                                            alt="Strar logo"
+                                        />
+                                        <span>Star Plus</span>
+                                    </div>
+                                    <!-- Agrega más opciones aquí -->
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
