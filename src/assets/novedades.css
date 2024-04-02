@@ -336,6 +336,7 @@
     align-items: center;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    width: 112%;
 }
 .carousel-container::-webkit-scrollbar {
     display: none;
